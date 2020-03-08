@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         
         performSegue(withIdentifier: "goTo1", sender: self)
     }
+    @IBAction func sb2ButtonPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "goTo2", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

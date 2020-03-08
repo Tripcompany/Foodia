@@ -185,12 +185,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wn-iy-FNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195.6521739130435" y="-441.29464285714283"/>
+            <point key="canvasLocation" x="328" y="-441"/>
         </scene>
-        <!--View Controller-->
+        <!--Food Category1 View Controller-->
         <scene sceneID="16A-wH-zO5">
             <objects>
-                <viewController id="8A5-Gb-l8z" customClass="ViewController" customModule="mainPage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8A5-Gb-l8z" customClass="FoodCategory1ViewController" customModule="mainPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS4-q5-jUJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,14 +206,14 @@
                                     <constraint firstAttribute="height" constant="200" id="W1K-TG-pXy"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="태국의 .. 요리" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPF-z5-hgN">
-                                <rect key="frame" x="0.0" y="380" width="414" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조리법 및 지역 카테고리 눌렀을 때 나오는 메뉴" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPF-z5-hgN">
+                                <rect key="frame" x="0.0" y="380" width="414" height="161.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz6-cR-XTE">
-                                <rect key="frame" x="20" y="459" width="374" height="61"/>
+                                <rect key="frame" x="20" y="566.5" width="374" height="61"/>
                                 <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -225,6 +225,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSz-mt-2sE">
+                                <rect key="frame" x="81" y="746" width="49" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="뒤로"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="8A5-Gb-l8z" eventType="touchUpInside" id="sRP-eY-c4X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -245,15 +254,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="609-uc-OkQ"/>
                     </view>
+                    <connections>
+                        <outlet property="category1Comment" destination="Bz6-cR-XTE" id="fXf-Pr-cXo"/>
+                        <outlet property="category1Label" destination="xPF-z5-hgN" id="a1O-OY-oU3"/>
+                        <outlet property="foodCategory1Image" destination="GPc-M5-puj" id="nii-RT-Vai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BRk-3q-4Rs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1440.5797101449277" y="-632.14285714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--goTo2-->
         <scene sceneID="Uvp-dS-O48">
             <objects>
-                <viewController storyboardIdentifier="sb2" id="ps7-PJ-bTe" customClass="ViewController" customModule="mainPage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sb2" title="goTo2" id="ps7-PJ-bTe" customClass="ViewController" customModule="mainPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9k8-IY-uyM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,14 +291,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJE-Pz-8hQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="돼지고기"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="CpG-D5-SL0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuT-Hb-i2v">
                                                 <rect key="frame" x="138" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="닭고기"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="EcX-je-SnG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-hU-Mkb">
                                                 <rect key="frame" x="276" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="소고기"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="GlL-mE-CXM"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -294,14 +317,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxM-si-52d">
                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="새우"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="Lft-0V-6gG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-h5-R9s">
                                                 <rect key="frame" x="138" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="생선"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="Ed2-2n-ubj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFm-PK-iWZ">
                                                 <rect key="frame" x="276" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="게"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="iYf-cT-58l"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -311,14 +343,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FU8-Aa-AyX">
                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="밀가루"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="Tap-aZ-76F"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9R-No-L1k">
                                                 <rect key="frame" x="138" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="쌀"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="alz-9J-S4Y"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGU-la-HLF">
                                                 <rect key="frame" x="276" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="과일"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="iBr-lp-zuh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -328,14 +369,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O1-aw-l4N">
                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="해산물"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="ss1-yg-3gv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYA-LP-XNv">
                                                 <rect key="frame" x="138" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="면류"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="gcq-TW-b31"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKb-4L-Gkx">
                                                 <rect key="frame" x="276" y="0.0" width="138" height="43"/>
                                                 <state key="normal" title="기타 고기"/>
+                                                <connections>
+                                                    <action selector="sb2ButtonPressed:" destination="ps7-PJ-bTe" eventType="touchUpInside" id="vBn-Lr-8z0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -369,10 +419,90 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yxt-EX-Xem"/>
                     </view>
+                    <connections>
+                        <segue destination="FR5-Oo-MLw" kind="presentation" identifier="goTo2" modalPresentationStyle="fullScreen" id="7T4-Go-Miy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCL-qC-bDi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195.6521739130435" y="496.875"/>
+            <point key="canvasLocation" x="328" y="498"/>
+        </scene>
+        <!--Food Category2 View Controller-->
+        <scene sceneID="D4M-YZ-R1R">
+            <objects>
+                <viewController id="FR5-Oo-MLw" customClass="FoodCategory2ViewController" customModule="mainPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MqQ-wr-uDE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkI-q5-3Co">
+                                <rect key="frame" x="82" y="64" width="332" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="krG-Ox-13q">
+                                <rect key="frame" x="0.0" y="150" width="414" height="200"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="BF0-Zj-FSe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식재료 카테고리 눌렀을 때 나오는 메뉴" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDU-zv-4HF">
+                                <rect key="frame" x="0.0" y="380" width="414" height="107.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBV-4L-Q9K">
+                                <rect key="frame" x="20" y="512.5" width="374" height="61"/>
+                                <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N4-cJ-jWF">
+                                <rect key="frame" x="20" y="76" width="52" height="33.5"/>
+                                <fontDescription key="fontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K16-7M-glC">
+                                <rect key="frame" x="82" y="747" width="49" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="뒤로"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="FR5-Oo-MLw" eventType="touchUpInside" id="trd-el-CEP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FBV-4L-Q9K" secondAttribute="trailing" constant="20" id="2Xl-0K-9wC"/>
+                            <constraint firstItem="krG-Ox-13q" firstAttribute="top" secondItem="bkI-q5-3Co" secondAttribute="bottom" constant="30" id="4HO-8i-QA6"/>
+                            <constraint firstItem="4N4-cJ-jWF" firstAttribute="leading" secondItem="fbW-ih-mf3" secondAttribute="leading" constant="20" id="4Ji-qR-ogu"/>
+                            <constraint firstItem="fbW-ih-mf3" firstAttribute="trailing" secondItem="vDU-zv-4HF" secondAttribute="trailing" id="ELh-ht-ooI"/>
+                            <constraint firstItem="vDU-zv-4HF" firstAttribute="leading" secondItem="fbW-ih-mf3" secondAttribute="leading" id="FBr-2I-cKu"/>
+                            <constraint firstItem="fbW-ih-mf3" firstAttribute="trailing" secondItem="krG-Ox-13q" secondAttribute="trailing" id="FhP-Ci-EyQ"/>
+                            <constraint firstItem="FBV-4L-Q9K" firstAttribute="leading" secondItem="fbW-ih-mf3" secondAttribute="leading" constant="20" id="LjV-Jx-kdL"/>
+                            <constraint firstItem="bkI-q5-3Co" firstAttribute="top" secondItem="fbW-ih-mf3" secondAttribute="top" constant="20" id="SNk-a0-hdF"/>
+                            <constraint firstItem="4N4-cJ-jWF" firstAttribute="top" secondItem="fbW-ih-mf3" secondAttribute="top" constant="32" id="aP2-E3-3m8"/>
+                            <constraint firstItem="FBV-4L-Q9K" firstAttribute="top" secondItem="vDU-zv-4HF" secondAttribute="bottom" constant="25" id="de6-b4-MnR"/>
+                            <constraint firstItem="vDU-zv-4HF" firstAttribute="top" secondItem="krG-Ox-13q" secondAttribute="bottom" constant="30" id="hq7-9b-iv9"/>
+                            <constraint firstItem="bkI-q5-3Co" firstAttribute="leading" secondItem="4N4-cJ-jWF" secondAttribute="trailing" constant="10" id="uR1-Uu-VIT"/>
+                            <constraint firstItem="bkI-q5-3Co" firstAttribute="trailing" secondItem="fbW-ih-mf3" secondAttribute="trailing" id="vjY-pE-d4O"/>
+                            <constraint firstItem="krG-Ox-13q" firstAttribute="leading" secondItem="fbW-ih-mf3" secondAttribute="leading" id="zqP-PN-ml5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fbW-ih-mf3"/>
+                    </view>
+                    <connections>
+                        <outlet property="foodCategory2Comment" destination="FBV-4L-Q9K" id="Kii-cp-EJd"/>
+                        <outlet property="foodCategory2Image" destination="krG-Ox-13q" id="bl8-7h-JKp"/>
+                        <outlet property="foodCategory2Label" destination="vDU-zv-4HF" id="S4W-aP-lJ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ra9-36-gyB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="666"/>
         </scene>
     </scenes>
 </document>

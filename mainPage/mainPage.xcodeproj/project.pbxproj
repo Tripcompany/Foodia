@@ -14,7 +14,8 @@
 		3D312CB12414AB8F00448936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D312CB02414AB8F00448936 /* Assets.xcassets */; };
 		3D312CB42414AB8F00448936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D312CB22414AB8F00448936 /* LaunchScreen.storyboard */; };
 		3D312CC02414B31D00448936 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D312CBF2414B31D00448936 /* PageViewController.swift */; };
-		3D312CC22414C47A00448936 /* FoodCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D312CC12414C47A00448936 /* FoodCategoryViewController.swift */; };
+		3D312CC22414C47A00448936 /* FoodCategory1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D312CC12414C47A00448936 /* FoodCategory1ViewController.swift */; };
+		3D312CC42414D39700448936 /* FoodCategory2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D312CC32414D39700448936 /* FoodCategory2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		3D312CB32414AB8F00448936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D312CB52414AB8F00448936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D312CBF2414B31D00448936 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		3D312CC12414C47A00448936 /* FoodCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewController.swift; sourceTree = "<group>"; };
+		3D312CC12414C47A00448936 /* FoodCategory1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory1ViewController.swift; sourceTree = "<group>"; };
+		3D312CC32414D39700448936 /* FoodCategory2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,11 @@
 			children = (
 				3D312CA72414AB8E00448936 /* AppDelegate.swift */,
 				3D312CA92414AB8E00448936 /* SceneDelegate.swift */,
+				3D312CC12414C47A00448936 /* FoodCategory1ViewController.swift */,
+				3D312CC32414D39700448936 /* FoodCategory2ViewController.swift */,
+				3D312CAD2414AB8E00448936 /* Main.storyboard */,
 				3D312CAB2414AB8E00448936 /* ViewController.swift */,
 				3D312CBF2414B31D00448936 /* PageViewController.swift */,
-				3D312CC12414C47A00448936 /* FoodCategoryViewController.swift */,
-				3D312CAD2414AB8E00448936 /* Main.storyboard */,
 				3D312CB02414AB8F00448936 /* Assets.xcassets */,
 				3D312CB22414AB8F00448936 /* LaunchScreen.storyboard */,
 				3D312CB52414AB8F00448936 /* Info.plist */,
@@ -145,7 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D312CAC2414AB8E00448936 /* ViewController.swift in Sources */,
-				3D312CC22414C47A00448936 /* FoodCategoryViewController.swift in Sources */,
+				3D312CC42414D39700448936 /* FoodCategory2ViewController.swift in Sources */,
+				3D312CC22414C47A00448936 /* FoodCategory1ViewController.swift in Sources */,
 				3D312CA82414AB8E00448936 /* AppDelegate.swift in Sources */,
 				3D312CAA2414AB8E00448936 /* SceneDelegate.swift in Sources */,
 				3D312CC02414B31D00448936 /* PageViewController.swift in Sources */,
